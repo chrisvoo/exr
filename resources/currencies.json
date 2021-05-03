@@ -1,0 +1,3060 @@
+{
+    "resultsInfo": {
+        "totalRecords": 209,
+        "timezoneReference": "Dates refer to the Central European Time Zone"
+    },
+    "currencies": [
+        {
+            "countries": [
+                {
+                    "currencyISO": "ADP",
+                    "country": "ANDORRA",
+                    "countryISO": "AD",
+                    "validityStartDate": "1999-02-01",
+                    "validityEndDate": "2003-10-31"
+                }
+            ],
+            "isoCode": "ADP",
+            "name": "Andorra Peseta",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "AED",
+                    "country": "UNITED ARAB EMIRATES",
+                    "countryISO": null,
+                    "validityStartDate": "1981-06-15",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "AED",
+            "name": "U.A.E. Dirham",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "AFN",
+                    "country": "AFGHANISTAN (Islamic State of)",
+                    "countryISO": "AF",
+                    "validityStartDate": "1963-12-31",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "AFN",
+            "name": "Afghani",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "ALL",
+                    "country": "ALBANIA",
+                    "countryISO": "AL",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "ALL",
+            "name": "Lek",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "AMD",
+                    "country": "ARMENIA",
+                    "countryISO": "AM",
+                    "validityStartDate": "1999-02-01",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "AMD",
+            "name": "Armenian Dram",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "ANG",
+                    "country": "NETHERLANDS ANTILLES",
+                    "countryISO": "AN",
+                    "validityStartDate": "1989-01-31",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "ANG",
+            "name": "Netherlands Antillean Guilder",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "AOA",
+                    "country": "ANGOLA",
+                    "countryISO": "AO",
+                    "validityStartDate": "1981-07-15",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "AOA",
+            "name": "Adjusted Kwanza",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "ARS",
+                    "country": "ARGENTINA",
+                    "countryISO": "AR",
+                    "validityStartDate": "1963-12-31",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "ARS",
+            "name": "Peso",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "ATS",
+                    "country": "AUSTRIA",
+                    "countryISO": "AT",
+                    "validityStartDate": "1920-09-24",
+                    "validityEndDate": "2001-12-28"
+                }
+            ],
+            "isoCode": "ATS",
+            "name": "Austrian Shilling",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "AUD",
+                    "country": "AUSTRALIA",
+                    "countryISO": "AU",
+                    "validityStartDate": "1945-05-10",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "AUD",
+            "name": "Australian Dollar",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "AWG",
+                    "country": "ARUBA",
+                    "countryISO": "AW",
+                    "validityStartDate": "1989-01-31",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "AWG",
+            "name": "Aruban Florin",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "AZM",
+                    "country": "AZERBAIJAN",
+                    "countryISO": "AZ",
+                    "validityStartDate": "1995-02-03",
+                    "validityEndDate": "2006-12-31"
+                }
+            ],
+            "isoCode": "AZM",
+            "name": "Azerbaijan Manat",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "AZN",
+                    "country": "AZERBAIJAN",
+                    "countryISO": "AZ",
+                    "validityStartDate": "2006-01-01",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "AZN",
+            "name": "New Azerbaijan Manat",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "BAM",
+                    "country": "BOSNIA and HERZEGOVINA",
+                    "countryISO": "BA",
+                    "validityStartDate": "1998-07-31",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "BAM",
+            "name": "Convertible Marks",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "BBD",
+                    "country": "BARBADOS",
+                    "countryISO": "BB",
+                    "validityStartDate": "1988-10-17",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "BBD",
+            "name": "Barbados Dollar",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "BDT",
+                    "country": "BANGLADESH",
+                    "countryISO": "BD",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "BDT",
+            "name": "Bangladesh Taka",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "BEF",
+                    "country": "BELGIUM",
+                    "countryISO": "BE",
+                    "validityStartDate": "1921-12-01",
+                    "validityEndDate": "2001-12-28"
+                }
+            ],
+            "isoCode": "BEF",
+            "name": "Belgian Franc",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "BGL",
+                    "country": "BULGARIA",
+                    "countryISO": "BG",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": "2004-05-06"
+                }
+            ],
+            "isoCode": "BGL",
+            "name": "Lev",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "BGN",
+                    "country": "BULGARIA",
+                    "countryISO": "BG",
+                    "validityStartDate": "1999-07-21",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "BGN",
+            "name": "Bulgarian New Lev",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "BHD",
+                    "country": "BAHRAIN",
+                    "countryISO": "BH",
+                    "validityStartDate": "1982-02-15",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "BHD",
+            "name": "Bahrain Dinar",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "BIF",
+                    "country": "BURUNDI",
+                    "countryISO": "BI",
+                    "validityStartDate": "1988-10-17",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "BIF",
+            "name": "Burundi Franc",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "BMD",
+                    "country": "BERMUDA",
+                    "countryISO": "BM",
+                    "validityStartDate": "1988-10-17",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "BMD",
+            "name": "Bermuda Dollar",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "BND",
+                    "country": "BRUNEI DARUSSALAM",
+                    "countryISO": "BN",
+                    "validityStartDate": "1988-10-17",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "BND",
+            "name": "Brunei Dollar",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "BOB",
+                    "country": "BOLIVIA",
+                    "countryISO": "BO",
+                    "validityStartDate": "1963-12-31",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "BOB",
+            "name": "Boliviano",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "BRL",
+                    "country": "BRAZIL",
+                    "countryISO": "BR",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "BRL",
+            "name": "Real",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "BSD",
+                    "country": "BAHAMAS (The)",
+                    "countryISO": "BS",
+                    "validityStartDate": "1989-01-31",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "BSD",
+            "name": "Bahamian Dollar",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "BTN",
+                    "country": "BHUTAN",
+                    "countryISO": "BT",
+                    "validityStartDate": "1988-10-17",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "BTN",
+            "name": "Ngultrum",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "BWP",
+                    "country": "BOTSWANA",
+                    "countryISO": "BW",
+                    "validityStartDate": "1988-10-17",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "BWP",
+            "name": "Botswana Pula",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "BYB",
+                    "country": "BELARUS",
+                    "countryISO": "BY",
+                    "validityStartDate": "1995-06-09",
+                    "validityEndDate": "2000-12-29"
+                }
+            ],
+            "isoCode": "BYB",
+            "name": "Belarussian Ruble",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "BYN",
+                    "country": "BELARUS",
+                    "countryISO": "BY",
+                    "validityStartDate": "2016-07-01",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "BYN",
+            "name": "Belarussian Ruble (new)",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "BYR",
+                    "country": "BELARUS",
+                    "countryISO": "BY",
+                    "validityStartDate": "2000-02-07",
+                    "validityEndDate": "2016-07-05"
+                }
+            ],
+            "isoCode": "BYR",
+            "name": "Belarussian Ruble (new)",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "BZD",
+                    "country": "BELIZE",
+                    "countryISO": "BZ",
+                    "validityStartDate": "1988-10-17",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "BZD",
+            "name": "Belize Dollar",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "CAD",
+                    "country": "CANADA",
+                    "countryISO": "CA",
+                    "validityStartDate": "1924-06-13",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "CAD",
+            "name": "Canadian Dollar",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "CDF",
+                    "country": "CONGO (Democratic Republic of)",
+                    "countryISO": "CD",
+                    "validityStartDate": "1999-04-01",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "CDF",
+            "name": "Franc Congolais",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "CHF",
+                    "country": "SWITZERLAND",
+                    "countryISO": "CH",
+                    "validityStartDate": "1918-01-02",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "CHF",
+            "name": "Swiss Franc",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "CLP",
+                    "country": "CHILE",
+                    "countryISO": "CL",
+                    "validityStartDate": "1963-12-31",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "CLP",
+            "name": "Chilean Peso",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "CNY",
+                    "country": "CHINA (People Republic of)",
+                    "countryISO": "CN",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "CNY",
+            "name": "Renminbi",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "COP",
+                    "country": "COLOMBIA",
+                    "countryISO": "CO",
+                    "validityStartDate": "1963-12-31",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "COP",
+            "name": "Colombian Peso",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "CRC",
+                    "country": "COSTA RICA",
+                    "countryISO": "CR",
+                    "validityStartDate": "1975-02-17",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "CRC",
+            "name": "Costa Rican Colon",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "CSD",
+                    "country": "SERBIA",
+                    "countryISO": "RS",
+                    "validityStartDate": "2006-05-22",
+                    "validityEndDate": "2006-11-30"
+                },
+                {
+                    "currencyISO": "CSD",
+                    "country": "SERBIA AND MONTENEGRO",
+                    "countryISO": "CS",
+                    "validityStartDate": "2003-11-03",
+                    "validityEndDate": "2006-05-21"
+                }
+            ],
+            "isoCode": "CSD",
+            "name": "Serbian Dinar",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "CSK",
+                    "country": "CZECHOSLOVAKIA",
+                    "countryISO": "CS",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": "1993-04-14"
+                }
+            ],
+            "isoCode": "CSK",
+            "name": "Czechoslovak Koruna",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "CUP",
+                    "country": "CUBA",
+                    "countryISO": "CU",
+                    "validityStartDate": "1975-02-17",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "CUP",
+            "name": "Cuban Peso",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "CVE",
+                    "country": "CAPE VERDE",
+                    "countryISO": "CV",
+                    "validityStartDate": "1988-10-17",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "CVE",
+            "name": "Cape Verde Escudo",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "CYP",
+                    "country": "CYPRUS",
+                    "countryISO": "CY",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": "2007-12-31"
+                }
+            ],
+            "isoCode": "CYP",
+            "name": "Cyprus Pound",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "CZK",
+                    "country": "CZECH REPUBLIC",
+                    "countryISO": "CZ",
+                    "validityStartDate": "1993-03-15",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "CZK",
+            "name": "Czech Koruna",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "DDM",
+                    "country": "GERMANY (Democratic Repub.)",
+                    "countryISO": "DD",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": "1990-11-29"
+                }
+            ],
+            "isoCode": "DDM",
+            "name": "DDR Mark",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "DEM",
+                    "country": "GERMANY",
+                    "countryISO": "DE",
+                    "validityStartDate": "1920-09-14",
+                    "validityEndDate": "2001-12-28"
+                }
+            ],
+            "isoCode": "DEM",
+            "name": "Deutsche Mark",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "DJF",
+                    "country": "DJIBOUTI",
+                    "countryISO": "DJ",
+                    "validityStartDate": "1983-03-15",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "DJF",
+            "name": "Djibouti Franc",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "DKK",
+                    "country": "DENMARK",
+                    "countryISO": "DK",
+                    "validityStartDate": "1933-06-01",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "DKK",
+            "name": "Danish Krone",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "DOP",
+                    "country": "DOMINICAN REPUBLIC",
+                    "countryISO": "DO",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "DOP",
+            "name": "Dominican Peso",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "DZD",
+                    "country": "ALGERIA",
+                    "countryISO": "DZ",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "DZD",
+            "name": "Algerian Dinar",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "ECS",
+                    "country": "ECUADOR",
+                    "countryISO": "EC",
+                    "validityStartDate": "1963-12-31",
+                    "validityEndDate": "2000-09-29"
+                }
+            ],
+            "isoCode": "ECS",
+            "name": "Ecuadoran Sucre",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "ECU",
+                    "country": "EUROPEAN MONETARY SYSTEM",
+                    "countryISO": "XX",
+                    "validityStartDate": "1981-09-21",
+                    "validityEndDate": "1998-12-31"
+                }
+            ],
+            "isoCode": "ECU",
+            "name": "Ecu",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "EEK",
+                    "country": "ESTONIA",
+                    "countryISO": "EE",
+                    "validityStartDate": "1991-05-31",
+                    "validityEndDate": "2010-12-31"
+                }
+            ],
+            "isoCode": "EEK",
+            "name": "Kroon",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "EGP",
+                    "country": "EGYPT",
+                    "countryISO": "EG",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "EGP",
+            "name": "Egyptian Pound",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "ERN",
+                    "country": "ERITREA",
+                    "countryISO": "ER",
+                    "validityStartDate": "1998-07-24",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "ERN",
+            "name": "Nakfa",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "ESP",
+                    "country": "SPAIN",
+                    "countryISO": "ES",
+                    "validityStartDate": "1918-04-30",
+                    "validityEndDate": "2001-12-28"
+                }
+            ],
+            "isoCode": "ESP",
+            "name": "Spanish Peseta",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "ETB",
+                    "country": "ETHIOPIA",
+                    "countryISO": "ET",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "ETB",
+            "name": "Ethiopian Birr",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "EUR",
+                    "country": "EUROPEAN MONETARY UNION",
+                    "countryISO": "XX",
+                    "validityStartDate": "1999-01-01",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "EUR",
+            "name": "Euro",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "FIM",
+                    "country": "FINLAND",
+                    "countryISO": "FI",
+                    "validityStartDate": "1941-10-01",
+                    "validityEndDate": "2001-12-28"
+                }
+            ],
+            "isoCode": "FIM",
+            "name": "Finnish Markka",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "FJD",
+                    "country": "FIJI",
+                    "countryISO": "FJ",
+                    "validityStartDate": "1989-01-31",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "FJD",
+            "name": "Fiji Dollar",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "FKP",
+                    "country": "FALKLAND or MALVINE (Islands)",
+                    "countryISO": "FK",
+                    "validityStartDate": "1989-01-31",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "FKP",
+            "name": "Falkland Pound",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "FRF",
+                    "country": "FRANCE",
+                    "countryISO": "FR",
+                    "validityStartDate": "1918-02-01",
+                    "validityEndDate": "2001-12-28"
+                }
+            ],
+            "isoCode": "FRF",
+            "name": "French Franc",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "GBP",
+                    "country": "UNITED KINGDOM",
+                    "countryISO": "GB",
+                    "validityStartDate": "1918-01-02",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "GBP",
+            "name": "Pound Sterling",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "GEL",
+                    "country": "GEORGIA",
+                    "countryISO": "GE",
+                    "validityStartDate": "1991-08-16",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "GEL",
+            "name": "Lari",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "GHC",
+                    "country": "GHANA",
+                    "countryISO": "GH",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": "2007-12-31"
+                }
+            ],
+            "isoCode": "GHC",
+            "name": "Cedi",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "GHS",
+                    "country": "GHANA",
+                    "countryISO": "GH",
+                    "validityStartDate": "2007-07-01",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "GHS",
+            "name": "New Ghana Cedi",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "GIP",
+                    "country": "GIBRALTAR",
+                    "countryISO": "GI",
+                    "validityStartDate": "1989-01-31",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "GIP",
+            "name": "Gibraltar Pound",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "GMD",
+                    "country": "GAMBIA (The)",
+                    "countryISO": "GM",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "GMD",
+            "name": "Dalasi",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "GNF",
+                    "country": "GUINEA",
+                    "countryISO": "GN",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "GNF",
+            "name": "Guinean Franc",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "GQE",
+                    "country": "EQUATORIAL GUINEA",
+                    "countryISO": "GQ",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": "1987-01-14"
+                }
+            ],
+            "isoCode": "GQE",
+            "name": "Ekwele",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "GRD",
+                    "country": "GREECE",
+                    "countryISO": "GR",
+                    "validityStartDate": "1935-07-19",
+                    "validityEndDate": "2001-12-28"
+                }
+            ],
+            "isoCode": "GRD",
+            "name": "Greek Drachma",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "GTQ",
+                    "country": "GUATEMALA",
+                    "countryISO": "GT",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "GTQ",
+            "name": "Quetzal",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "GWP",
+                    "country": "GUINEA BISSAU",
+                    "countryISO": "GW",
+                    "validityStartDate": "1988-10-17",
+                    "validityEndDate": "1997-07-31"
+                }
+            ],
+            "isoCode": "GWP",
+            "name": "Guinea-Bissau Peso",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "GYD",
+                    "country": "GUYANA",
+                    "countryISO": "GY",
+                    "validityStartDate": "1988-10-17",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "GYD",
+            "name": "Guyanan Dollar",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "HKD",
+                    "country": "HONG KONG (China)",
+                    "countryISO": "HK",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "HKD",
+            "name": "Hong Kong Dollar",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "HNL",
+                    "country": "HONDURAS",
+                    "countryISO": "HN",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "HNL",
+            "name": "Lempira",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "HRK",
+                    "country": "CROATIA",
+                    "countryISO": "HR",
+                    "validityStartDate": "1994-06-03",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "HRK",
+            "name": "Kuna",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "HTG",
+                    "country": "HAITI",
+                    "countryISO": "HT",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "HTG",
+            "name": "Gourde",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "HUF",
+                    "country": "HUNGARY",
+                    "countryISO": "HU",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "HUF",
+            "name": "Forint",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "IDR",
+                    "country": "INDONESIA",
+                    "countryISO": "ID",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "IDR",
+            "name": "Indonesian Rupiah",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "IEP",
+                    "country": "IRELAND",
+                    "countryISO": "IE",
+                    "validityStartDate": "1978-05-12",
+                    "validityEndDate": "2001-12-28"
+                }
+            ],
+            "isoCode": "IEP",
+            "name": "Irish Pound",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "ILS",
+                    "country": "ISRAEL",
+                    "countryISO": "IL",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "ILS",
+            "name": "New Sheqel",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "INR",
+                    "country": "INDIA",
+                    "countryISO": "IN",
+                    "validityStartDate": "1963-12-31",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "INR",
+            "name": "Indian Rupee",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "IQD",
+                    "country": "IRAQ",
+                    "countryISO": "IQ",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "IQD",
+            "name": "Iraq Dinar",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "IRR",
+                    "country": "IRAN (Islamic Republic of)",
+                    "countryISO": "IR",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "IRR",
+            "name": "Iranian Rial",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "ISK",
+                    "country": "ICELAND",
+                    "countryISO": "IS",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "ISK",
+            "name": "Icelandic Krona",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "ITL",
+                    "country": "ITALY",
+                    "countryISO": "IT",
+                    "validityStartDate": "1918-02-01",
+                    "validityEndDate": "2001-12-28"
+                }
+            ],
+            "isoCode": "ITL",
+            "name": "Italian Lira",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "JMD",
+                    "country": "JAMAICA",
+                    "countryISO": "JM",
+                    "validityStartDate": "1988-10-17",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "JMD",
+            "name": "Jamaica Dollar",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "JOD",
+                    "country": "JORDAN",
+                    "countryISO": "JO",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "JOD",
+            "name": "Jordan Dinar",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "JPY",
+                    "country": "JAPAN",
+                    "countryISO": "JP",
+                    "validityStartDate": "1942-01-24",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "JPY",
+            "name": "Japanese Yen",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "KES",
+                    "country": "KENYA",
+                    "countryISO": "KE",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "KES",
+            "name": "Kenya Shilling",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "KGS",
+                    "country": "KYRGYZ REPUBLIC",
+                    "countryISO": "KG",
+                    "validityStartDate": "1998-07-31",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "KGS",
+            "name": "Som",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "KHR",
+                    "country": "CAMBODIA",
+                    "countryISO": "KH",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "KHR",
+            "name": "Cambodian Riel",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "KMF",
+                    "country": "COMOROS",
+                    "countryISO": "KM",
+                    "validityStartDate": "1989-01-31",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "KMF",
+            "name": "Comorian Franc",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "KPW",
+                    "country": "KOREA (Democratic People Rep.)",
+                    "countryISO": "KP",
+                    "validityStartDate": "1988-10-17",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "KPW",
+            "name": "North Korean Won",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "KRW",
+                    "country": "KOREA (Republic of)",
+                    "countryISO": "KR",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "KRW",
+            "name": "South Korean Won",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "KWD",
+                    "country": "KUWAIT",
+                    "countryISO": "KW",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "KWD",
+            "name": "Kuwaiti Dinar",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "KYD",
+                    "country": "CAYMAN (Islands)",
+                    "countryISO": "KY",
+                    "validityStartDate": "1989-01-31",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "KYD",
+            "name": "Cayman Dollar",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "KZT",
+                    "country": "KAZAKHSTAN",
+                    "countryISO": "KZ",
+                    "validityStartDate": "1995-09-08",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "KZT",
+            "name": "Tenge",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "LAK",
+                    "country": "LAO PEOPLE S DEMOCRATIC REPUBL",
+                    "countryISO": "LA",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "LAK",
+            "name": "Lao Kip",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "LBP",
+                    "country": "LEBANON",
+                    "countryISO": "LB",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "LBP",
+            "name": "Lebanese Pound",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "LKR",
+                    "country": "SRI LANKA",
+                    "countryISO": "LK",
+                    "validityStartDate": "1963-12-31",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "LKR",
+            "name": "Sri Lanka Rupee",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "LRD",
+                    "country": "LIBERIA",
+                    "countryISO": "LR",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "LRD",
+            "name": "Liberian Dollar",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "LSL",
+                    "country": "LESOTHO",
+                    "countryISO": "LS",
+                    "validityStartDate": "1989-01-31",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "LSL",
+            "name": "Loti",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "LTL",
+                    "country": "LITHUANIA",
+                    "countryISO": "LT",
+                    "validityStartDate": "1991-05-31",
+                    "validityEndDate": "2014-12-31"
+                }
+            ],
+            "isoCode": "LTL",
+            "name": "Litas",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "LUF",
+                    "country": "LUXEMBOURG",
+                    "countryISO": "LU",
+                    "validityStartDate": "1918-01-02",
+                    "validityEndDate": "2001-12-28"
+                }
+            ],
+            "isoCode": "LUF",
+            "name": "Luxembourg franc",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "LVL",
+                    "country": "LATVIA",
+                    "countryISO": "LV",
+                    "validityStartDate": "1991-05-31",
+                    "validityEndDate": "2013-12-31"
+                }
+            ],
+            "isoCode": "LVL",
+            "name": "Lats",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "LYD",
+                    "country": "LIBYAN ARAB JAMAHIRIYA",
+                    "countryISO": "LY",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "LYD",
+            "name": "Libyan Dinar",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "MAD",
+                    "country": "MOROCCO",
+                    "countryISO": "MA",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "MAD",
+            "name": "Moroccan Dirham",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "MDL",
+                    "country": "MOLDOVA",
+                    "countryISO": "MD",
+                    "validityStartDate": "1995-03-17",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "MDL",
+            "name": "Moldovan Leu",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "MGA",
+                    "country": "MADAGASCAR",
+                    "countryISO": "MG",
+                    "validityStartDate": "2005-01-03",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "MGA",
+            "name": "Ariary",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "MGF",
+                    "country": "MADAGASCAR",
+                    "countryISO": "MG",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": "2005-12-31"
+                }
+            ],
+            "isoCode": "MGF",
+            "name": "Malagasy Franc",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "MKD",
+                    "country": "MACEDONIA (form. Yugoslav Rep)",
+                    "countryISO": "MK",
+                    "validityStartDate": "1995-06-02",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "MKD",
+            "name": "Macedonian Denar",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "MLF",
+                    "country": "MALI",
+                    "countryISO": "ML",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": "1984-06-14"
+                }
+            ],
+            "isoCode": "MLF",
+            "name": "Mali Franc",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "MMK",
+                    "country": "MYANMAR",
+                    "countryISO": "MM",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "MMK",
+            "name": "Kyat",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "MNT",
+                    "country": "MONGOLIA",
+                    "countryISO": "MN",
+                    "validityStartDate": "1988-10-17",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "MNT",
+            "name": "Tugrik",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "MOP",
+                    "country": "MACAU",
+                    "countryISO": "MO",
+                    "validityStartDate": "1988-10-17",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "MOP",
+            "name": "Pataca",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "MRO",
+                    "country": "MAURITANIA",
+                    "countryISO": "MR",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": "2017-12-31"
+                }
+            ],
+            "isoCode": "MRO",
+            "name": "Ouguiya",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "MRU",
+                    "country": "MAURITANIA",
+                    "countryISO": "MR",
+                    "validityStartDate": "2018-01-01",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "MRU",
+            "name": "Ouguiya",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "MTL",
+                    "country": "MALTA",
+                    "countryISO": "MT",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": "2007-12-31"
+                }
+            ],
+            "isoCode": "MTL",
+            "name": "Maltese Lira",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "MUR",
+                    "country": "MAURITIUS",
+                    "countryISO": "MU",
+                    "validityStartDate": "1988-10-17",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "MUR",
+            "name": "Mauritian Rupee",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "MVR",
+                    "country": "MALDIVES",
+                    "countryISO": "MV",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "MVR",
+            "name": "Rufiyaa",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "MWK",
+                    "country": "MALAWI",
+                    "countryISO": "MW",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "MWK",
+            "name": "Malawi Kwacha",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "MXN",
+                    "country": "MEXICO",
+                    "countryISO": "MX",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "MXN",
+            "name": "Mexican Peso",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "MYR",
+                    "country": "MALAYSIA",
+                    "countryISO": "MY",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "MYR",
+            "name": "Ringgit",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "MZM",
+                    "country": "MOZAMBIQUE",
+                    "countryISO": "MZ",
+                    "validityStartDate": "1981-06-15",
+                    "validityEndDate": "2006-12-31"
+                }
+            ],
+            "isoCode": "MZM",
+            "name": "Metical",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "MZN",
+                    "country": "MOZAMBIQUE",
+                    "countryISO": "MZ",
+                    "validityStartDate": "2006-07-01",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "MZN",
+            "name": "New Mozambique Metical",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "NAD",
+                    "country": "NAMIBIA",
+                    "countryISO": "NA",
+                    "validityStartDate": "1999-02-01",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "NAD",
+            "name": "Namibian Dollar",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "NGN",
+                    "country": "NIGERIA",
+                    "countryISO": "NG",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "NGN",
+            "name": "Naira",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "NIO",
+                    "country": "NICARAGUA",
+                    "countryISO": "NI",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "NIO",
+            "name": "Cordoba",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "NLG",
+                    "country": "NETHERLANDS",
+                    "countryISO": "NL",
+                    "validityStartDate": "1918-04-30",
+                    "validityEndDate": "2001-12-28"
+                }
+            ],
+            "isoCode": "NLG",
+            "name": "Netherlands Guilder",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "NOK",
+                    "country": "NORWAY",
+                    "countryISO": "NO",
+                    "validityStartDate": "1926-06-01",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "NOK",
+            "name": "Norwegian Krone",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "NPR",
+                    "country": "NEPAL",
+                    "countryISO": "NP",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "NPR",
+            "name": "Nepalese Rupee",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "NZD",
+                    "country": "NEW ZEALAND",
+                    "countryISO": "NZ",
+                    "validityStartDate": "1963-12-31",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "NZD",
+            "name": "New Zealand Dollar",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "OMR",
+                    "country": "OMAN",
+                    "countryISO": "OM",
+                    "validityStartDate": "1983-03-15",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "OMR",
+            "name": "Rial Omani",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "PAB",
+                    "country": "PANAMA",
+                    "countryISO": "PA",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "PAB",
+            "name": "Balboa",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "PEN",
+                    "country": "PERU",
+                    "countryISO": "PE",
+                    "validityStartDate": "1963-12-31",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "PEN",
+            "name": "Nuevo Sol",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "PGK",
+                    "country": "PAPUA NEW GUINEA",
+                    "countryISO": "PG",
+                    "validityStartDate": "1988-10-17",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "PGK",
+            "name": "Kina",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "PHP",
+                    "country": "PHILIPPINES",
+                    "countryISO": "PH",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "PHP",
+            "name": "Philippine Peso",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "PKR",
+                    "country": "PAKISTAN",
+                    "countryISO": "PK",
+                    "validityStartDate": "1963-12-31",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "PKR",
+            "name": "Pakistan Rupee",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "PLN",
+                    "country": "POLAND",
+                    "countryISO": "PL",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "PLN",
+            "name": "Zloty",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "PTE",
+                    "country": "PORTUGAL",
+                    "countryISO": "PT",
+                    "validityStartDate": "1937-11-27",
+                    "validityEndDate": "2001-12-28"
+                }
+            ],
+            "isoCode": "PTE",
+            "name": "Portuguese Escudo",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "PYG",
+                    "country": "PARAGUAY",
+                    "countryISO": "PY",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "PYG",
+            "name": "Paraguayan Guarani",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "QAR",
+                    "country": "QATAR",
+                    "countryISO": "QA",
+                    "validityStartDate": "1988-10-17",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "QAR",
+            "name": "Qatar Riyal",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "ROL",
+                    "country": "ROMANIA",
+                    "countryISO": "RO",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": "2006-12-31"
+                }
+            ],
+            "isoCode": "ROL",
+            "name": "Romanian Leu",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "RON",
+                    "country": "ROMANIA",
+                    "countryISO": "RO",
+                    "validityStartDate": "2005-07-01",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "RON",
+            "name": "New Romanian Leu",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "RSD",
+                    "country": "SERBIA",
+                    "countryISO": "RS",
+                    "validityStartDate": "2006-12-01",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "RSD",
+            "name": "Serbian Dinar",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "RUB",
+                    "country": "RUSSIAN FEDERATION",
+                    "countryISO": "RU",
+                    "validityStartDate": "1995-05-12",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "RUB",
+            "name": "Russian Ruble",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "RWF",
+                    "country": "RWANDA",
+                    "countryISO": "RW",
+                    "validityStartDate": "1981-07-15",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "RWF",
+            "name": "Rwanda Franc",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "SAR",
+                    "country": "SAUDI ARABIA",
+                    "countryISO": "SA",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "SAR",
+            "name": "Saudi Arabian Riyal",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "SBD",
+                    "country": "SOLOMON (Islands)",
+                    "countryISO": "SB",
+                    "validityStartDate": "1989-01-31",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "SBD",
+            "name": "Solomon Islands Dollar",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "SCR",
+                    "country": "SEYCHELLES",
+                    "countryISO": "SC",
+                    "validityStartDate": "1988-10-17",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "SCR",
+            "name": "Seychelles Rupee",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "SDD",
+                    "country": "SUDAN",
+                    "countryISO": "SD",
+                    "validityStartDate": "1963-12-31",
+                    "validityEndDate": "2007-06-30"
+                }
+            ],
+            "isoCode": "SDD",
+            "name": "Sudanese Dinar",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "SDG",
+                    "country": "SUDAN",
+                    "countryISO": "SD",
+                    "validityStartDate": "2007-04-01",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "SDG",
+            "name": "Sudanese Pound",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "SEK",
+                    "country": "SWEDEN",
+                    "countryISO": "SE",
+                    "validityStartDate": "1918-04-30",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "SEK",
+            "name": "Swedish Krona",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "SGD",
+                    "country": "SINGAPORE",
+                    "countryISO": "SG",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "SGD",
+            "name": "Singapore Dollar",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "SHP",
+                    "country": "ST. HELENA",
+                    "countryISO": "SH",
+                    "validityStartDate": "1989-01-31",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "SHP",
+            "name": "St. Helena Pound",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "SIT",
+                    "country": "SLOVENIA",
+                    "countryISO": "SI",
+                    "validityStartDate": "1992-03-31",
+                    "validityEndDate": "2006-12-31"
+                }
+            ],
+            "isoCode": "SIT",
+            "name": "Tolar",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "SKK",
+                    "country": "SLOVAK REPUBLIC",
+                    "countryISO": "SK",
+                    "validityStartDate": "1993-03-15",
+                    "validityEndDate": "2008-12-31"
+                }
+            ],
+            "isoCode": "SKK",
+            "name": "Slovak Koruna",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "SLL",
+                    "country": "SIERRA LEONE",
+                    "countryISO": "SL",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "SLL",
+            "name": "Leone",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "SOS",
+                    "country": "SOMALIA",
+                    "countryISO": "SO",
+                    "validityStartDate": "1963-12-31",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "SOS",
+            "name": "Somali Shilling",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "SRD",
+                    "country": "SURINAME",
+                    "countryISO": "SR",
+                    "validityStartDate": "2004-03-01",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "SRD",
+            "name": "Suriname Dollar",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "SRG",
+                    "country": "SURINAME",
+                    "countryISO": "SR",
+                    "validityStartDate": "1988-10-17",
+                    "validityEndDate": "2004-02-27"
+                }
+            ],
+            "isoCode": "SRG",
+            "name": "Suriname Guilder",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "SSP",
+                    "country": "SOUTH SUDAN",
+                    "countryISO": "SS",
+                    "validityStartDate": "2011-08-01",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "SSP",
+            "name": "South Sudanese Pound",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "STD",
+                    "country": "SAO TOME and PRINCIPE",
+                    "countryISO": "ST",
+                    "validityStartDate": "1988-10-17",
+                    "validityEndDate": "2017-12-31"
+                }
+            ],
+            "isoCode": "STD",
+            "name": "Dobra",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "STN",
+                    "country": "SAO TOME and PRINCIPE",
+                    "countryISO": "ST",
+                    "validityStartDate": "2018-01-01",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "STN",
+            "name": "Dobra",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "SUR",
+                    "country": "S.S.U.R.",
+                    "countryISO": "SU",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": "1995-05-18"
+                }
+            ],
+            "isoCode": "SUR",
+            "name": "Ruble",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "SVC",
+                    "country": "EL SALVADOR",
+                    "countryISO": "SV",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "SVC",
+            "name": "Salvadoran Colon",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "SYP",
+                    "country": "SYRIAN ARAB REPUBLIC",
+                    "countryISO": "SY",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "SYP",
+            "name": "Syrian Pound",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "SZL",
+                    "country": "ESWATINI (EX SWAZILAND)",
+                    "countryISO": "SZ",
+                    "validityStartDate": "1989-01-31",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "SZL",
+            "name": "Lilangeni",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "THB",
+                    "country": "THAILAND",
+                    "countryISO": "TH",
+                    "validityStartDate": "1963-12-31",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "THB",
+            "name": "Baht",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "TJR",
+                    "country": "TAJIKISTAN",
+                    "countryISO": "TJ",
+                    "validityStartDate": "1998-07-31",
+                    "validityEndDate": "2001-01-31"
+                }
+            ],
+            "isoCode": "TJR",
+            "name": "Tajik Ruble",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "TJS",
+                    "country": "TAJIKISTAN",
+                    "countryISO": "TJ",
+                    "validityStartDate": "2001-01-02",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "TJS",
+            "name": "Somoni",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "TMM",
+                    "country": "TURKMENISTAN",
+                    "countryISO": "TM",
+                    "validityStartDate": "1998-07-31",
+                    "validityEndDate": "2009-12-31"
+                }
+            ],
+            "isoCode": "TMM",
+            "name": "Turkmen Manat",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "TMT",
+                    "country": "TURKMENISTAN",
+                    "countryISO": "TM",
+                    "validityStartDate": "2009-01-01",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "TMT",
+            "name": "Turkmen Manat (new)",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "TND",
+                    "country": "TUNISIA",
+                    "countryISO": "TN",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "TND",
+            "name": "Tunisian Dinar",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "TOP",
+                    "country": "TONGA",
+                    "countryISO": "TO",
+                    "validityStartDate": "1989-01-31",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "TOP",
+            "name": "Pa anga",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "TRL",
+                    "country": "TURKEY",
+                    "countryISO": "TR",
+                    "validityStartDate": "1963-12-31",
+                    "validityEndDate": "2005-12-31"
+                }
+            ],
+            "isoCode": "TRL",
+            "name": "Turkish Lira",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "TRY",
+                    "country": "TURKEY",
+                    "countryISO": "TR",
+                    "validityStartDate": "2005-01-03",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "TRY",
+            "name": "Turkey Lira (new)",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "TTD",
+                    "country": "TRINIDAD and TOBAGO",
+                    "countryISO": "TT",
+                    "validityStartDate": "1988-10-17",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "TTD",
+            "name": "Trinidad and Tobago Dollar",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "TWD",
+                    "country": "TAIWAN",
+                    "countryISO": "TW",
+                    "validityStartDate": "1988-10-17",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "TWD",
+            "name": "New Taiwan Dollar",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "TZS",
+                    "country": "TANZANIA",
+                    "countryISO": "TZ",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "TZS",
+            "name": "Tanzania Shilling",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "UAH",
+                    "country": "UKRAINE",
+                    "countryISO": "UA",
+                    "validityStartDate": "1991-05-31",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "UAH",
+            "name": "Hryvnia",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "UGX",
+                    "country": "UGANDA",
+                    "countryISO": "UG",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "UGX",
+            "name": "Uganda Shilling",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "USD",
+                    "country": "UNITED STATES",
+                    "countryISO": "US",
+                    "validityStartDate": "1918-01-02",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "USD",
+            "name": "U.S. Dollar",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "UYU",
+                    "country": "URUGUAY",
+                    "countryISO": "UY",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "UYU",
+            "name": "Uruguayan Peso",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "UZS",
+                    "country": "UZBEKISTAN",
+                    "countryISO": "UZ",
+                    "validityStartDate": "1998-07-31",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "UZS",
+            "name": "Uzbek Sum",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "VEB",
+                    "country": "VENEZUELA",
+                    "countryISO": "VE",
+                    "validityStartDate": "1963-12-31",
+                    "validityEndDate": "2012-10-26"
+                }
+            ],
+            "isoCode": "VEB",
+            "name": "Bolivar",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "VEF",
+                    "country": "VENEZUELA",
+                    "countryISO": "VE",
+                    "validityStartDate": "2008-01-01",
+                    "validityEndDate": "2018-08-19"
+                }
+            ],
+            "isoCode": "VEF",
+            "name": "Bolivar",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "VES",
+                    "country": "VENEZUELA",
+                    "countryISO": "VE",
+                    "validityStartDate": "2018-08-20",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "VES",
+            "name": "Bolivar Soberano",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "VND",
+                    "country": "VIETNAM",
+                    "countryISO": "VN",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "VND",
+            "name": "Dong",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "VUV",
+                    "country": "VANUATU",
+                    "countryISO": "VU",
+                    "validityStartDate": "1989-01-31",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "VUV",
+            "name": "Vatu",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "WST",
+                    "country": "WESTERN SAMOA",
+                    "countryISO": "WS",
+                    "validityStartDate": "1989-01-31",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "WST",
+            "name": "Tala",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "XAF",
+                    "country": "CAMEROON",
+                    "countryISO": "CM",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                },
+                {
+                    "currencyISO": "XAF",
+                    "country": "CENTRAL AFRICAN REPUBLIC",
+                    "countryISO": "CF",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                },
+                {
+                    "currencyISO": "XAF",
+                    "country": "CHAD",
+                    "countryISO": "TD",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                },
+                {
+                    "currencyISO": "XAF",
+                    "country": "CONGO (Republic of)",
+                    "countryISO": "CG",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                },
+                {
+                    "currencyISO": "XAF",
+                    "country": "EQUATORIAL GUINEA",
+                    "countryISO": "GQ",
+                    "validityStartDate": "1987-01-15",
+                    "validityEndDate": null
+                },
+                {
+                    "currencyISO": "XAF",
+                    "country": "GABON",
+                    "countryISO": "GA",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "XAF",
+            "name": "CFA Franc",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "XCD",
+                    "country": "ANTIGUA AND BARBUDA",
+                    "countryISO": "AG",
+                    "validityStartDate": "1988-10-17",
+                    "validityEndDate": null
+                },
+                {
+                    "currencyISO": "XCD",
+                    "country": "DOMINICA",
+                    "countryISO": "DM",
+                    "validityStartDate": "1988-10-17",
+                    "validityEndDate": null
+                },
+                {
+                    "currencyISO": "XCD",
+                    "country": "GRENADA",
+                    "countryISO": "GD",
+                    "validityStartDate": "1988-10-17",
+                    "validityEndDate": null
+                },
+                {
+                    "currencyISO": "XCD",
+                    "country": "ST. KITTS AND NEVIS",
+                    "countryISO": "KN",
+                    "validityStartDate": "1988-10-17",
+                    "validityEndDate": null
+                },
+                {
+                    "currencyISO": "XCD",
+                    "country": "ST. LUCIA",
+                    "countryISO": "LC",
+                    "validityStartDate": "1988-10-17",
+                    "validityEndDate": null
+                },
+                {
+                    "currencyISO": "XCD",
+                    "country": "ST. VINCENT and the GRENADINES",
+                    "countryISO": "VC",
+                    "validityStartDate": "1988-10-17",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "XCD",
+            "name": "East Caribbean Dollar",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "XDR",
+                    "country": "INTERNATIONAL MONETARY FUND",
+                    "countryISO": "XX",
+                    "validityStartDate": "1999-02-01",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "XDR",
+            "name": "SDR",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "XOF",
+                    "country": "BENIN",
+                    "countryISO": "BJ",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                },
+                {
+                    "currencyISO": "XOF",
+                    "country": "BURKINA FASO",
+                    "countryISO": "BF",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                },
+                {
+                    "currencyISO": "XOF",
+                    "country": "COTE D IVOIRE",
+                    "countryISO": "CI",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                },
+                {
+                    "currencyISO": "XOF",
+                    "country": "GUINEA BISSAU",
+                    "countryISO": "GW",
+                    "validityStartDate": "1997-08-01",
+                    "validityEndDate": null
+                },
+                {
+                    "currencyISO": "XOF",
+                    "country": "MALI",
+                    "countryISO": "ML",
+                    "validityStartDate": "1984-06-15",
+                    "validityEndDate": null
+                },
+                {
+                    "currencyISO": "XOF",
+                    "country": "NIGER",
+                    "countryISO": "NE",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                },
+                {
+                    "currencyISO": "XOF",
+                    "country": "SENEGAL",
+                    "countryISO": "SN",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                },
+                {
+                    "currencyISO": "XOF",
+                    "country": "TOGO",
+                    "countryISO": "TG",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "XOF",
+            "name": "CFA Franc",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "XPF",
+                    "country": "FRENCH POLINESIA",
+                    "countryISO": "PF",
+                    "validityStartDate": "1988-10-17",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "XPF",
+            "name": "CFP Franc",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "YDD",
+                    "country": "YEMEN SOUTH",
+                    "countryISO": "YD",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": "1990-05-30"
+                }
+            ],
+            "isoCode": "YDD",
+            "name": "Yemeni Dinar",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "YER",
+                    "country": "YEMEN",
+                    "countryISO": "YE",
+                    "validityStartDate": "1990-05-31",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "YER",
+            "name": "Yemeni Rial",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "YUM",
+                    "country": "YUGOSLAVIA",
+                    "countryISO": "YU",
+                    "validityStartDate": "1963-12-31",
+                    "validityEndDate": "2003-10-31"
+                }
+            ],
+            "isoCode": "YUM",
+            "name": "Yugoslavia New Dinar",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "ZAR",
+                    "country": "SOUTH AFRICA",
+                    "countryISO": "ZA",
+                    "validityStartDate": "1963-12-31",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "ZAR",
+            "name": "South African Rand",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "ZMK",
+                    "country": "ZAMBIA",
+                    "countryISO": "ZM",
+                    "validityStartDate": "1975-02-17",
+                    "validityEndDate": "2012-12-31"
+                }
+            ],
+            "isoCode": "ZMK",
+            "name": "Zambian Kwacha",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "ZMW",
+                    "country": "ZAMBIA",
+                    "countryISO": "ZM",
+                    "validityStartDate": "2013-01-01",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "ZMW",
+            "name": "Zambian Kwacha",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "ZRN",
+                    "country": "CONGO (Democratic Republic of)",
+                    "countryISO": "CD",
+                    "validityStartDate": "1974-04-16",
+                    "validityEndDate": "1999-06-30"
+                }
+            ],
+            "isoCode": "ZRN",
+            "name": "New Zaire",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "ZWD",
+                    "country": "ZIMBABWE",
+                    "countryISO": "ZW",
+                    "validityStartDate": "1980-03-17",
+                    "validityEndDate": "2013-10-30"
+                }
+            ],
+            "isoCode": "ZWD",
+            "name": "Zimbabwe Dollar",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "ZWL",
+                    "country": "ZIMBABWE",
+                    "countryISO": "ZW",
+                    "validityStartDate": "2019-02-25",
+                    "validityEndDate": null
+                }
+            ],
+            "isoCode": "ZWL",
+            "name": "Zimbabwe Dollar",
+            "graph": false
+        },
+        {
+            "countries": [
+                {
+                    "currencyISO": "ZWN",
+                    "country": "ZIMBABWE",
+                    "countryISO": "ZW",
+                    "validityStartDate": "2006-08-01",
+                    "validityEndDate": "2006-09-30"
+                }
+            ],
+            "isoCode": "ZWN",
+            "name": "New Zimbabwe Dollar",
+            "graph": false
+        }
+    ]
+}

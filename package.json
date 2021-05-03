@@ -1,0 +1,62 @@
+{
+  "name": "exr",
+  "version": "0.0.1",
+  "description": "Exchange rates module and CLI app",
+  "main": "dist/exr.js",
+  "files": [
+    "/dist"
+  ],
+  "types": "",
+  "scripts": {
+    "clean": "rimraf dist/*",
+    "tsc": "tsc",
+    "test": "jest --detectOpenHandles --runInBand --forceExit",
+    "build": "run-s clean tsc",
+    "watch": "tsc --watch",
+    "prepare": "npm run build",
+    "eslint": "eslint src",
+    "eslint-fix": "eslint --fix src"
+  },
+  "bin": {
+    "exr": "./dist/src/exr.js"
+  },
+  "engines": {
+    "node": ">=10",
+    "tsc": ">=3"
+  },
+  "keywords": [
+    "cli",
+    "exchange rates",
+    "currency",
+    "rates"
+  ],
+  "author": {
+    "name": "Christian Castelli",
+    "email": "voodoo81people@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "chalk": "^4.1.0",
+    "checkvar": "^1.0.1",
+    "commander": "^7.0.0",
+    "inquirer": "^7.3.3",
+    "ora": "^5.2.0"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/commander": "^2.12.2",
+    "@types/inquirer": "^7.3.1",
+    "@types/jest": "^26.0.23",
+    "@typescript-eslint/eslint-plugin": "^4.12.0",
+    "@typescript-eslint/parser": "^4.12.0",
+    "eslint": "^7.17.0",
+    "eslint-config-airbnb-base": "^14",
+    "eslint-plugin-import": "^2",
+    "jest": "^26.6.3",
+    "npm-run-all": "^4",
+    "rimraf": "^3",
+    "ts-jest": "^26.5.5",
+    "typescript": "^4"
+  }
+}
