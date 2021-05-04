@@ -68,7 +68,7 @@ describe('Bank Of Italy API tests', () => {
     });
   }, 10000);
 
-  it.only('can call simplifiedCurrencies to obtain a simplified currencies object', async () => {
+  it('can call simplifiedCurrencies to obtain a simplified currencies object', async () => {
     const bankApi = new BankOfItaly();
     const response = await bankApi.simplifiedCurrencies();
     expect(Object.prototype.hasOwnProperty.call(response, 'EUR')).toBeTruthy();
