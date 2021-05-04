@@ -136,4 +136,27 @@ export default class BankOfItaly extends BaseProvider implements Provider {
       });
       return response.data;
     }
+
+    /**
+     * Calls the "currencies" method and returns a single object whose keys are the
+     * currencies' ISO codes and the values are their names in the specified language.
+     * It also filters out those currencies which are not valid anymore.
+     * @param lang "en" or "it"
+     * @returns List of simplified currencies.
+     */
+    async simplifiedCurrencies(lang?: BankOfItalyNS.Lang): Promise<Record<string, string>> {
+      const response = await this.currencies(lang);
+
+      return response.currencies
+        .filter((currency: BankOfItalyNS.Currency) => {
+          const { countries } = currency;
+          return (countries.some((country) => country.validityEndDate === null));
+        }).reduce((
+          accumulator: Record<string, string>,
+          currentValue: BankOfItalyNS.Currency,
+        ) => {
+          accumulator[currentValue.isoCode] = currentValue.name;
+          return accumulator;
+        }, {});
+    }
 }

@@ -1,0 +1,8 @@
+dist: focal
+language: node_js
+node_js:
+  - "14"
+script:
+  - "Build starts..."
+  - npm install
+  - npm test

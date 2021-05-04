@@ -1,6 +1,6 @@
 {
   "name": "exr",
-  "version": "0.0.1",
+  "version": "0.2.0",
   "description": "Exchange rates module and CLI app",
   "main": "dist/exr.js",
   "files": [

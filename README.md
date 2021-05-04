@@ -2,9 +2,12 @@
   <a href="https://github.com/chrisvoo/exr/blob/master/LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="EXR is released under the MIT license." />
   </a>
+  <a href="https://travis-ci.com/chrisvoo/exr">
+    <img src="https://travis-ci.com/chrisvoo/exr.svg?branch=main" alt="Build status" />
+  </a>
 </p>
 
-<h1 align="center">EXR 0.1.0</h1>
+<h1 align="center">EXR 0.2.0</h1>
 <p align="center">💶 Exchange rates module and CLI app 💵</p>
 
 ## Table of Contents
