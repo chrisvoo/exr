@@ -6,6 +6,15 @@ import { promisify } from 'util';
 import fs from 'fs';
 import { BaseProvider, Provider } from '../Provider';
 import { BankOfItalyNS } from './BankOfItalyNS';
+// aliases
+import Options = BankOfItalyNS.Options;
+import MediaType = BankOfItalyNS.MediaType;
+import BaseRequestParams = BankOfItalyNS.BaseRequestParams;
+import LatestRates = BankOfItalyNS.LatestRates
+import Lang = BankOfItalyNS.Lang;
+import Currencies = BankOfItalyNS.Currencies;
+import Currency = BankOfItalyNS.Currency;
+import DailyRatesRequestParams = BankOfItalyNS.DailyRatesRequestParams;
 
 const finished = promisify(stream.finished);
 
@@ -17,7 +26,7 @@ export default class BankOfItaly extends BaseProvider implements Provider {
 
     baseEndpoint: string;
 
-    options: BankOfItalyNS.Options;
+    options: Options;
 
     request: AxiosInstance;
 
@@ -25,7 +34,7 @@ export default class BankOfItaly extends BaseProvider implements Provider {
      * Creates an instance of BankOfItaly
      * @param options The option that can be overridden.
      */
-    constructor(options?: BankOfItalyNS.Options) {
+    constructor(options?: Options) {
       super();
 
       this.name = 'BankOfItaly';
@@ -33,7 +42,7 @@ export default class BankOfItaly extends BaseProvider implements Provider {
 
       this.options = {
         lang: 'en',
-        output: BankOfItalyNS.MediaType.JSON,
+        output: MediaType.JSON,
         requestTimeout: 3000,
         ...options,
       };
@@ -53,22 +62,42 @@ export default class BankOfItaly extends BaseProvider implements Provider {
       return this.name;
     }
 
+    private buildQueryString<T extends BaseRequestParams>(params?: T): string {
+      let qs: string = '';
+      const finalLang = params?.lang || this.options.lang;
+
+      if (params) {
+        if ('referenceDate' in params) {
+          const fields = (params as unknown as DailyRatesRequestParams);
+        }
+      }
+
+      // base case
+      if (qs.length !== 0) {
+        qs += '&';
+      }
+
+      qs += `lang=${finalLang}`;
+
+      return qs;
+    }
+
     /**
      * Used to correctly setup the headers and the response type.
      * @param output Specifies the Accept header
      * @returns The ready to-be-used config for Axios requests
      */
-    private getAxiosConfig(output?: BankOfItalyNS.MediaType): AxiosRequestConfig {
+    private getAxiosConfig(output?: MediaType): AxiosRequestConfig {
       let responseType: ResponseType = 'json';
       const finalOutput = output || this.options.output;
 
       switch (finalOutput) {
-        case BankOfItalyNS.MediaType.JSON:
+        case MediaType.JSON:
           responseType = 'json';
           break;
-        case BankOfItalyNS.MediaType.CSV:
-        case BankOfItalyNS.MediaType.PDF:
-        case BankOfItalyNS.MediaType.XLS:
+        case MediaType.CSV:
+        case MediaType.PDF:
+        case MediaType.XLS:
           responseType = 'stream';
           break;
         default: throw new Error(`Format ${output} unsupported`);
@@ -89,22 +118,18 @@ export default class BankOfItaly extends BaseProvider implements Provider {
      * @path path The path for saving the file
      * @returns The latest rates
      */
-    async latestRates(
-      output?: BankOfItalyNS.MediaType,
-      path?: string,
-      lang?: BankOfItalyNS.Lang,
-    ): Promise<BankOfItalyNS.LatestRates | void> {
-      const finalLang = lang || this.options.lang;
+    async latestRates(params?: BaseRequestParams): Promise<LatestRates | void> {
+      const finalLang = params?.lang || this.options.lang;
 
-      const axiosConf = this.getAxiosConfig(output);
-      const response: AxiosResponse<BankOfItalyNS.LatestRates | stream> = await this.request.get(
-        `/latestRates?lang=${finalLang}`,
+      const axiosConf = this.getAxiosConfig(params?.output);
+      const response: AxiosResponse<LatestRates | stream> = await this.request.get(
+        `/latestRates?${this.buildQueryString(params)}`,
         axiosConf,
       );
 
       if (axiosConf.responseType === 'stream') {
-        if (typeof path === 'string') {
-          const writer = fs.createWriteStream(path);
+        if (typeof params?.path === 'string') {
+          const writer = fs.createWriteStream(params.path);
           (response.data as stream).pipe(writer);
           return finished(writer);
         }
@@ -112,7 +137,7 @@ export default class BankOfItaly extends BaseProvider implements Provider {
         throw new Error('You must specify the filename for CSV, XLS and PDF');
       }
 
-      const { resultsInfo, latestRates } = response.data as BankOfItalyNS.LatestRates;
+      const { resultsInfo, latestRates } = response.data as LatestRates;
 
       return {
         resultsInfo,
@@ -124,15 +149,22 @@ export default class BankOfItaly extends BaseProvider implements Provider {
       };
     }
 
+    async dailyRates(params: DailyRatesRequestParams) {
+      const finalLang = params?.lang || this.options.lang;
+
+      const axiosConf = this.getAxiosConfig(params?.output);
+
+    }
+
     /**
      * Returns a list of all currencies, including expired currencies.
      * @param lang "en" or "it"
      * @returns A list of currencies
      */
-    async currencies(lang?: BankOfItalyNS.Lang) {
+    async currencies(lang?: Lang) {
       const finalLang = lang || this.options.lang;
-      const response: AxiosResponse<BankOfItalyNS.Currencies> = await this.request.get(`/currencies?lang=${finalLang}`, {
-        headers: { Accept: BankOfItalyNS.MediaType.JSON }, // accept only JSON as result
+      const response: AxiosResponse<Currencies> = await this.request.get(`/currencies?lang=${finalLang}`, {
+        headers: { Accept: MediaType.JSON }, // accept only JSON as result
       });
       return response.data;
     }
@@ -144,16 +176,16 @@ export default class BankOfItaly extends BaseProvider implements Provider {
      * @param lang "en" or "it"
      * @returns List of simplified currencies.
      */
-    async simplifiedCurrencies(lang?: BankOfItalyNS.Lang): Promise<Record<string, string>> {
+    async simplifiedCurrencies(lang?: Lang): Promise<Record<string, string>> {
       const response = await this.currencies(lang);
 
       return response.currencies
-        .filter((currency: BankOfItalyNS.Currency) => {
+        .filter((currency: Currency) => {
           const { countries } = currency;
           return (countries.some((country) => country.validityEndDate === null));
         }).reduce((
           accumulator: Record<string, string>,
-          currentValue: BankOfItalyNS.Currency,
+          currentValue: Currency,
         ) => {
           accumulator[currentValue.isoCode] = currentValue.name;
           return accumulator;

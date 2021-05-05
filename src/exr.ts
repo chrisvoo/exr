@@ -4,7 +4,7 @@ import { program, Option, Command } from 'commander';
 import ora from 'ora';
 import inquirer from 'inquirer';
 import chalk from 'chalk';
-import { error, showResult, warning } from './libs/terminal';
+import { error, showResult, warning } from './cli/terminal';
 
 /**
  * Extend the base type with the options you pass to your app.

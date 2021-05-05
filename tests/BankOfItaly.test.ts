@@ -1,7 +1,11 @@
 import fs from 'fs';
 import BankOfItaly from '../src/libs/provider/BankOfItaly';
 import { BankOfItalyNS } from '../src/libs/provider/BankOfItalyNS';
-import { showResult } from '../src/libs/terminal';
+import { showResult } from '../src/cli/terminal';
+
+// aliases
+import MediaType = BankOfItalyNS.MediaType;
+import LatestRates = BankOfItalyNS.LatestRates
 
 describe('Bank Of Italy API tests', () => {
   it('has the default props correctly setup', () => {
@@ -10,12 +14,12 @@ describe('Bank Of Italy API tests', () => {
     expect(bankApi.name).toBe('BankOfItaly');
     expect(bankApi.options.requestTimeout).toBe(3000);
     expect(bankApi.options.lang).toBe('en');
-    expect(bankApi.options.output).toBe(BankOfItalyNS.MediaType.JSON);
+    expect(bankApi.options.output).toBe(MediaType.JSON);
   });
 
   it('can call latestRates returning a JSON response', async () => {
     const bankApi = new BankOfItaly();
-    const rates = await bankApi.latestRates() as BankOfItalyNS.LatestRates;
+    const rates = await bankApi.latestRates() as LatestRates;
 
     expect(rates).not.toBeNull();
     expect(rates.resultsInfo.totalRecords).toBeGreaterThan(1);
@@ -26,10 +30,10 @@ describe('Bank Of Italy API tests', () => {
   it('can call latestRates returning a PDF response', async (done) => {
     const bankApi = new BankOfItaly();
     const path = './latestRates.pdf';
-    await bankApi.latestRates(
-      BankOfItalyNS.MediaType.PDF,
-      './latestRates.pdf',
-    );
+    await bankApi.latestRates({
+      output: MediaType.PDF,
+      path: './latestRates.pdf',
+    });
 
     fs.access(path, fs.constants.F_OK, (err) => {
       if (err) {
@@ -72,5 +76,6 @@ describe('Bank Of Italy API tests', () => {
     const bankApi = new BankOfItaly();
     const response = await bankApi.simplifiedCurrencies();
     expect(Object.prototype.hasOwnProperty.call(response, 'EUR')).toBeTruthy();
+    // showResult(response);
   });
 });

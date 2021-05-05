@@ -32,8 +32,11 @@ The code is structured to support multiple exchange rates providers, but current
 This is an example for getting the exchange rates, against the euro and the US dollar, on the latest day for which there are quotations available for all the currencies quoted in the database:
 
 ```typescript
+import { BankOfItaly, BankOfItalyNS } from 'exr';
+import LatestRates = BankOfItalyNS.LatestRates
+
 const bankApi = new BankOfItaly();
-const rates = await bankApi.latestRates() as BankOfItalyNS.LatestRates;
+const rates = await bankApi.latestRates() as LatestRates;
 ```
 
 `rates` will contain something like the following:
@@ -75,13 +78,30 @@ const rates = await bankApi.latestRates() as BankOfItalyNS.LatestRates;
 It's also possible to get the same results in other formats like PDF, CSV and Excel. In these cases, you have to pass some parameters to the methods, for example:
 
 ```typescript
+import { BankOfItaly, BankOfItalyNS } from 'exr';
+import MediaType = BankOfItalyNS.MediaType;
+
 const bankApi = new BankOfItaly();
 const path = './latestRates.pdf';
 await bankApi.latestRates(
-    BankOfItalyNS.MediaType.PDF,
+    MediaType.PDF,
     './latestRates.pdf',
 );
 ```
 
 Whenever you export the result in something different than JSON, all the promises won't return anything and you'll find the file at the specified path.  
+In case you need a list of all the currencies currently used in the world, you just have to call `bankApi.simplifiedCurrencies()`. The method will return a `Record<string, string>` whose keys are the currencies ISO codes, and the values their name.
+
+```javascript
+{
+  //...
+  "EUR": "Euro",
+  "FJD": "Fiji Dollar",
+  "FKP": "Falkland Pound",
+  "GBP": "Pound Sterling",
+  //...
+}
+```
+
+A cached JSON object reporting the same information [can be found here](docs/currencies.json).  
 Please [refer to the full documentation](./docs/Operating_Instructions.pdf) to see the corresponding methods and their parameters.

@@ -1,3 +1,5 @@
+import currencies from '../../data/currencies.json';
+
 /**
  * Main namespace for Bank Of Italy's API.
  * All dates are represented in the format "YYYY-MM-DD".
@@ -38,6 +40,18 @@ export namespace BankOfItalyNS {
         usdExchangeConvention: string
         usdExchangeConventionCode: string
         referenceDate: string
+    }
+
+    export interface BaseRequestParams {
+        lang?: Lang
+        output?: MediaType
+        path?: string
+    }
+
+    export interface DailyRatesRequestParams extends BaseRequestParams {
+        referenceDate: string // Format: YYYY-MM-DD
+        baseCurrencyIsoCodes: Array<keyof typeof currencies>
+        currencyIsoCode: 'EUR' | 'USD' | 'ITL'
     }
 
     export interface Response {
