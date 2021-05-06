@@ -41,6 +41,7 @@
     "checkvar": "^1.0.1",
     "commander": "^7.0.0",
     "inquirer": "^7.3.3",
+    "joi": "^17.4.0",
     "ora": "^5.2.0"
   },
   "devDependencies": {

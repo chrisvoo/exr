@@ -1,4 +1,4 @@
-import currencies from '../../data/currencies.json';
+import currencies from '../../../data/currencies.json';
 
 /**
  * Main namespace for Bank Of Italy's API.

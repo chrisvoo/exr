@@ -4,7 +4,7 @@ import axios, {
 import * as stream from 'stream';
 import { promisify } from 'util';
 import fs from 'fs';
-import { BaseProvider, Provider } from '../Provider';
+import { BaseProvider, Provider } from '../../Provider';
 import { BankOfItalyNS } from './BankOfItalyNS';
 // aliases
 import Options = BankOfItalyNS.Options;
@@ -69,6 +69,11 @@ export default class BankOfItaly extends BaseProvider implements Provider {
       if (params) {
         if ('referenceDate' in params) {
           const fields = (params as unknown as DailyRatesRequestParams);
+          qs = `referenceDate=${fields.referenceDate}`;
+
+          fields.baseCurrencyIsoCodes.forEach((curIsoCode) => {
+            
+          })
         }
       }
 
@@ -119,8 +124,6 @@ export default class BankOfItaly extends BaseProvider implements Provider {
      * @returns The latest rates
      */
     async latestRates(params?: BaseRequestParams): Promise<LatestRates | void> {
-      const finalLang = params?.lang || this.options.lang;
-
       const axiosConf = this.getAxiosConfig(params?.output);
       const response: AxiosResponse<LatestRates | stream> = await this.request.get(
         `/latestRates?${this.buildQueryString(params)}`,
@@ -150,9 +153,10 @@ export default class BankOfItaly extends BaseProvider implements Provider {
     }
 
     async dailyRates(params: DailyRatesRequestParams) {
-      const finalLang = params?.lang || this.options.lang;
+      const axiosConf = this.getAxiosConfig(params.output);
 
-      const axiosConf = this.getAxiosConfig(params?.output);
+
+
 
     }
 

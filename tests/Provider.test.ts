@@ -1,4 +1,5 @@
-import BankOfItaly from '../src/libs/provider/BankOfItaly';
+import BankOfItaly from '../src/libs/provider/BankOfItaly/BankOfItaly';
+import 'jest-extended';
 
 describe('Provider tests', () => {
   it('can list the filtered currencies', () => {
