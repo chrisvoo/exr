@@ -1,9 +1,8 @@
 import fs from 'fs';
-import BankOfItaly from '../src/libs/provider/BankOfItaly/BankOfItaly';
-import { BankOfItalyNS } from '../src/libs/provider/BankOfItaly/BankOfItalyNS';
-import { OptionValidator } from '../src/libs/provider/BankOfItaly/BankOfItalyValidators';
-import { showResult } from '../src/cli/terminal';
 import 'jest-extended';
+import BankOfItaly from '../../src/libs/provider/BankOfItaly/BankOfItaly';
+import { BankOfItalyNS } from '../../src/libs/provider/BankOfItaly/BankOfItalyNS';
+import { showResult } from '../../src/cli/terminal';
 
 // aliases
 import MediaType = BankOfItalyNS.MediaType;
@@ -34,7 +33,7 @@ describe('Bank Of Italy API tests', () => {
     const path = './latestRates.pdf';
     await bankApi.latestRates({
       output: MediaType.PDF,
-      path: './latestRates.pdf',
+      path,
     });
 
     fs.access(path, fs.constants.F_OK, (err) => {
@@ -55,7 +54,7 @@ describe('Bank Of Italy API tests', () => {
 
     expect(response.resultsInfo.totalRecords).toBeGreaterThan(174);
 
-    const currency = response.currencies.filter((currency) => currency.name === 'Italian Lira');
+    const currency = response.currencies.filter(currency => currency.name === 'Italian Lira');
     const theCountry = currency[0].countries[0];
     expect(theCountry.country).toBe('ITALY');
     expect(theCountry.validityEndDate).toBe('2001-12-28');
@@ -79,26 +78,5 @@ describe('Bank Of Italy API tests', () => {
     const response = await bankApi.simplifiedCurrencies();
     expect(Object.prototype.hasOwnProperty.call(response, 'EUR')).toBeTruthy();
     // showResult(response);
-  });
-
-  it.only('can validate constructor options', () => {
-    let { error } = OptionValidator.validate({ a: 1 });
-    expect(error).not.toBeUndefined();
-    expect(error!.message).toBe('"a" is not allowed');
-
-    ({ error } = OptionValidator.validate({
-      lang: 'en',
-      output: MediaType.JSON,
-      requestTimeout: -3,
-    }));
-    expect(error).not.toBeUndefined();
-    expect(error!.message).toBe('"requestTimeout" must be a positive number');
-
-    const { value } = OptionValidator.validate({});
-    expect(value).toContainAllEntries([
-      ['lang', 'en'],
-      ['output', MediaType.JSON],
-      ['requestTimeout', 3000],
-    ]);
   });
 });

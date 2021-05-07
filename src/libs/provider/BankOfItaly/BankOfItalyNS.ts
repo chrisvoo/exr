@@ -30,15 +30,25 @@ export namespace BankOfItalyNS {
         notice?: string
     }
 
-    export interface Rate {
+    export interface BaseRate {
         country: string
         currency: string
         isoCode: string
         uicCode: string
+    }
+
+    export interface LatestRate extends BaseRate {
         eurRate: number
         usdRate: number
         usdExchangeConvention: string
         usdExchangeConventionCode: string
+        referenceDate: string
+    }
+
+    export interface DailyRate extends BaseRate {
+        avgRate: number
+        exchangeConvention: string
+        exchangeConventionCode: string
         referenceDate: string
     }
 
@@ -49,9 +59,14 @@ export namespace BankOfItalyNS {
     }
 
     export interface DailyRatesRequestParams extends BaseRequestParams {
+        /** Quotation date. */
         referenceDate: string // Format: YYYY-MM-DD
+        /** The ISO code for the currency for which you want the exchange rate (case
+insensitive). */
         baseCurrencyIsoCodes: Array<keyof typeof currencies>
-        currencyIsoCode: 'EUR' | 'USD' | 'ITL'
+        /** The currency ISO code (case insensitive) against which you want the rates.
+ */
+        currencyIsoCode: 'EUR' | 'USD' | 'ITL',
     }
 
     export interface Response {
@@ -59,7 +74,10 @@ export namespace BankOfItalyNS {
     }
 
     export interface LatestRates extends Response {
-        latestRates: Rate[]
+        latestRates: LatestRate[]
+    }
+    export interface DailyRates extends Response {
+        rates: DailyRate[]
     }
 
     export interface Country {

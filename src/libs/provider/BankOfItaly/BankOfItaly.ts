@@ -1,11 +1,18 @@
 import axios, {
   AxiosInstance, AxiosRequestConfig, AxiosResponse, ResponseType,
 } from 'axios';
+import qs from 'querystring';
 import * as stream from 'stream';
 import { promisify } from 'util';
 import fs from 'fs';
 import { BaseProvider, Provider } from '../../Provider';
 import { BankOfItalyNS } from './BankOfItalyNS';
+import {
+  BaseRequestParamsValidator,
+  DailyRatesRequestParamsValidator,
+  OptionValidator,
+} from './BankOfItalyValidators';
+
 // aliases
 import Options = BankOfItalyNS.Options;
 import MediaType = BankOfItalyNS.MediaType;
@@ -15,6 +22,8 @@ import Lang = BankOfItalyNS.Lang;
 import Currencies = BankOfItalyNS.Currencies;
 import Currency = BankOfItalyNS.Currency;
 import DailyRatesRequestParams = BankOfItalyNS.DailyRatesRequestParams;
+import DailyRate = BankOfItalyNS.DailyRate;
+import DailyRates = BankOfItalyNS.DailyRates;
 
 const finished = promisify(stream.finished);
 
@@ -40,12 +49,12 @@ export default class BankOfItaly extends BaseProvider implements Provider {
       this.name = 'BankOfItaly';
       this.baseEndpoint = 'https://tassidicambio.bancaditalia.it/terzevalute-wf-web/rest/v1.0';
 
-      this.options = {
-        lang: 'en',
-        output: MediaType.JSON,
-        requestTimeout: 3000,
-        ...options,
-      };
+      const { error, value } = OptionValidator.validate(options || {});
+      if (error) {
+        throw new Error(error.message);
+      }
+
+      this.options = value as Options;
 
       this.request = axios.create({
         baseURL: this.baseEndpoint,
@@ -62,29 +71,36 @@ export default class BankOfItaly extends BaseProvider implements Provider {
       return this.name;
     }
 
+    /**
+     * This method builds the query string. Remember to validate everything before
+     * calling this method, 'cause it makes these assumptions
+     * @param params A request params object
+     * @returns {string} The query string
+     */
     private buildQueryString<T extends BaseRequestParams>(params?: T): string {
-      let qs: string = '';
-      const finalLang = params?.lang || this.options.lang;
+      let finalQueryString: any = {};
 
       if (params) {
         if ('referenceDate' in params) {
+          // we assume it's a valid DailyRatesRequestParams
           const fields = (params as unknown as DailyRatesRequestParams);
-          qs = `referenceDate=${fields.referenceDate}`;
+          finalQueryString = { ...params };
+          // these params are just internally useful, they must not be part
+          // of the final query string
+          if (params?.output) {
+            delete finalQueryString.output;
+          }
 
-          fields.baseCurrencyIsoCodes.forEach((curIsoCode) => {
-            
-          })
+          if (params?.path) {
+            delete finalQueryString.path;
+          }
         }
       }
 
-      // base case
-      if (qs.length !== 0) {
-        qs += '&';
-      }
+      const finalLang = params?.lang || this.options.lang;
+      finalQueryString.lang = finalLang;
 
-      qs += `lang=${finalLang}`;
-
-      return qs;
+      return qs.stringify(finalQueryString);
     }
 
     /**
@@ -124,27 +140,35 @@ export default class BankOfItaly extends BaseProvider implements Provider {
      * @returns The latest rates
      */
     async latestRates(params?: BaseRequestParams): Promise<LatestRates | void> {
-      const axiosConf = this.getAxiosConfig(params?.output);
+      const { error, value } = BaseRequestParamsValidator.validate(params || {});
+      if (error) {
+        throw new Error(error.message);
+      }
+
+      const valueParams = value as BaseRequestParams;
+
+      const axiosConf = this.getAxiosConfig(valueParams?.output);
       const response: AxiosResponse<LatestRates | stream> = await this.request.get(
-        `/latestRates?${this.buildQueryString(params)}`,
+        `/latestRates?${this.buildQueryString(valueParams)}`,
         axiosConf,
       );
 
       if (axiosConf.responseType === 'stream') {
-        if (typeof params?.path === 'string') {
-          const writer = fs.createWriteStream(params.path);
+        if (typeof valueParams?.path === 'string') {
+          const writer = fs.createWriteStream(valueParams.path);
           (response.data as stream).pipe(writer);
           return finished(writer);
         }
 
-        throw new Error('You must specify the filename for CSV, XLS and PDF');
+        // this should never happen, since the validator takes this into account
+        throw new Error('You must specify the path param for CSV, XLS and PDF');
       }
 
       const { resultsInfo, latestRates } = response.data as LatestRates;
 
       return {
         resultsInfo,
-        latestRates: latestRates.map((rate) => ({
+        latestRates: latestRates.map(rate => ({
           ...rate,
           eurRate: parseFloat(rate.eurRate as unknown as string),
           usdRate: parseFloat(rate.eurRate as unknown as string),
@@ -152,12 +176,39 @@ export default class BankOfItaly extends BaseProvider implements Provider {
       };
     }
 
-    async dailyRates(params: DailyRatesRequestParams) {
-      const axiosConf = this.getAxiosConfig(params.output);
+    /**
+     * It provides daily exchange rates for a specific date, against the euro, the US
+     * dollar or the Italian lira, for one or more requested currencies, which are valid
+     * and for which the rates for the selected date are available.
+     * If no currency is specified, the service will return all the available currencies.
+     * If there are no quotations for the date and currencies selected, the service
+     * will return an empty list with an information message.
+     * @param params Request parameters
+     * @returns The daily rates response.
+     */
+    async dailyRates(params: DailyRatesRequestParams): Promise<DailyRates | void> {
+      const { error, value } = DailyRatesRequestParamsValidator.validate(params);
+      if (error) {
+        throw new Error(error.message);
+      }
 
+      const valueParams = value as DailyRatesRequestParams;
+      const axiosConf = this.getAxiosConfig(valueParams.output);
 
+      const response: AxiosResponse<DailyRates | stream> = await this.request.get(
+        `/dailyRates?${this.buildQueryString(valueParams)}`,
+        axiosConf,
+      );
 
+      const { resultsInfo, rates } = response.data as DailyRates;
 
+      return {
+        resultsInfo,
+        rates: rates.map(rate => ({
+          ...rate,
+          avgRate: parseFloat(rate.avgRate as unknown as string),
+        })),
+      };
     }
 
     /**
@@ -186,11 +237,12 @@ export default class BankOfItaly extends BaseProvider implements Provider {
       return response.currencies
         .filter((currency: Currency) => {
           const { countries } = currency;
-          return (countries.some((country) => country.validityEndDate === null));
+          return (countries.some(country => country.validityEndDate === null));
         }).reduce((
           accumulator: Record<string, string>,
           currentValue: Currency,
         ) => {
+          // eslint-disable-next-line no-param-reassign
           accumulator[currentValue.isoCode] = currentValue.name;
           return accumulator;
         }, {});

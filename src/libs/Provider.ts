@@ -38,6 +38,6 @@ export abstract class BaseProvider {
   filterCurrencies(chars: string): Array<keyof typeof currencies> {
     const keys = Object
       .keys(this.currenciesList) as unknown as Array<keyof typeof currencies>;
-    return keys.filter((c) => c.startsWith(chars.toUpperCase()));
+    return keys.filter(c => c.startsWith(chars.toUpperCase()));
   }
 }
