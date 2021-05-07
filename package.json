@@ -11,7 +11,7 @@
     "clean": "rimraf dist/*",
     "tsc": "tsc",
     "test": "jest --detectOpenHandles --runInBand --forceExit",
-    "build": "run-s clean tsc",
+    "build": "npm-run-all clean tsc",
     "watch": "tsc --watch",
     "prepare": "npm run build",
     "eslint": "eslint src",
@@ -56,7 +56,7 @@
     "eslint-plugin-import": "^2",
     "jest": "^26.5.0",
     "jest-extended": "^0.11.5",
-    "npm-run-all": "^1.7.0",
+    "npm-run-all": "^1.8.0",
     "rimraf": "^3",
     "ts-jest": "^26.5.5",
     "typescript": "^4"
